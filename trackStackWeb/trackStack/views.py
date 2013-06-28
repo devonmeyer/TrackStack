@@ -2,6 +2,7 @@
 
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Welcome to TrackStack!")
+    return render(request, 'trackStack/snap-landing.html')
